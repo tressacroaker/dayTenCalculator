@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1> Calculator </h1>
+    <form>
+      <input id="numberOne" type="text" placeholder="Number">
+      <br>
+      <select id="operator">
+        <option value="add" id="add"> + </option>
+        <option value="subtract" id="subtract"> - </option>
+        <option value="multiply" id="multiply"> * </option>
+        <option value="divide" id="divide"> / </option>
+      </select>
+      <br>
+      <input id="numberTwo" type="text" placeholder="Number">
+      <br>
+      <button id="submitButton" type="button" onclick="answer(document.getElementById('numberOne').value,document.getElementById('numberTwo').value,document.getElementById('operator').value)">Submit</button>
+    </form>
+    <h1 id="answer"></h1>
+
+    <script src="app.js"</script>
+   </body>
+</html>
